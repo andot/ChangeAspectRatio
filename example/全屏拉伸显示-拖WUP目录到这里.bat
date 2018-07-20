@@ -20,7 +20,7 @@ for /f "delims=" %%i in ('dir /b "*.rpx"') do (
 )
 
 "%PDR%wiiurpxtool.exe" -d %RPXFILE%
-"%PDR%FixAspectRatio.exe" %RPXFILE% -w
+"%PDR%ChangeAspectRatio.exe" %RPXFILE% -w
 "%PDR%wiiurpxtool.exe" -c %RPXFILE%
 
 cd ../..
